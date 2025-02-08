@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GreetController;
 
+
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -12,3 +14,5 @@ Route::get('/greet', function () {
 //THis is the second Route
 });
 Route::get('/greeting',[GreetController::class, 'greeting']);
+
+
